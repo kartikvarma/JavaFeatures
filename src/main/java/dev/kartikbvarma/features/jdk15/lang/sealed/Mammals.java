@@ -1,7 +1,4 @@
-package dev.kartikbvarma.features.jdk17.lang.sealed;
-
-import dev.kartikbvarma.features.jdk17.lang.sealed.Animals;
-import dev.kartikbvarma.features.jdk17.lang.sealed.Humans;
+package dev.kartikbvarma.features.jdk15.lang.sealed;
 
 public sealed interface Mammals permits Humans, Animals {
 

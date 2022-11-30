@@ -4,7 +4,7 @@ Kartik Boreda
 1.0:
 :toc:
 :includedir: _includes
-:sourcedir: ../java/dev/kartikbvarma/features/
+:sourcedir: ../../main/java/dev/kartikbvarma/features
 
 IMPORTANT: The features listed in this project documentation doesn't include every change made to the project. (POV) Important changes and feature limited to core library, concurrency and data structures and called out
 

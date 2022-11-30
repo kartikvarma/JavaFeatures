@@ -1,4 +1,4 @@
-package dev.kartikbvarma.features.jdk17.lang.sealed;
+package dev.kartikbvarma.features.jdk15.lang.sealed;
 
 public sealed abstract class Animals implements Mammals permits SeaAnimals {
 

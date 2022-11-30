@@ -1,0 +1,71 @@
+= JDK 9 Features
+:toc:
+
+A complete list of JDK 9 Features are available https://docs.oracle.com/javase/9/whatsnew/toc.htm#JSNEW-GUID-C23AFD78-C777-460B-8ACE-58BE5EA681F6[here].
+
+== JVM, Design and Security
+* Java Module System
+* Remove of `rt.jar` and `tools.jar`
+* Introduction of `jshell` and `jcmd` tools
+* Removal of `hprof` agent
+
+
+== Core Library
+* Allow effectively final variables to be used as resources in the `try-with-resources`
+* CompactString
+* Revamped `@Deprecated` annotation
+* `java.lang.StackWalker` - New stack walking API
+
+== Concurrency
+
+* `Thread.onSpinWait` - A hint that a spin loop is executing
+* Updates to `CompletableFuture` class. 13 new methods.
+
+=== https://openjdk.org/jeps/266[JEP 266] - More Concurrency Updates
+. Flow Api - Is a new class that has four interfaces to help with pub-sub model.
+.. Flow.Publisher<T>
+.. Flow.Subscriber<T>
+.. Flow.Subscription<T>
+.. Flow.Processor<T>
+
+.Sample Code (Click to view)
+[%collapsible]
+====
+[source,java]
+----
+include::concurrency/FlowExample.java[]
+----
+====
+
+== Collections (Data Structures)
+
+=== http://openjdk.java.net/jeps/269[JEP 269] :  Convenience Factory Methods of Collections
+
+Available in Lists, Maps and Sets and return immutable collection.
+
+
+.Show Code (Click to view)
+[%collapsible]
+
+====
+[source,java]
+----
+include::collection/CollectionFactoryExample.java[]
+----
+
+<1> [John, Jacob, JingleheimerSmith]
+<2> [Mina, Ina, Tika]
+<3> {date-of-birth=1947-08-15, fist-name=Jane, last-name=Doe}
+
+====
+
+== Garbage Collectors
+
+* Default new G1 garbage cllector.
+* Warning message when using `-XX:+UseConcMarkSweepGC`
+
+
+
+
+
+

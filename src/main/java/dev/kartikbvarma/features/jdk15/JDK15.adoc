@@ -1,20 +1,83 @@
-= JDK 10 Features
-Kartik Boreda
-1.0, March 22, 2018:
-
+= JDK 15 Features
 :toc:
-:icons: font
-:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 
-IMPORTANT: The features listed in this project documentation doesn't include every change made to the project. (POV) Important changes and feature limited to core library, concurrency and data structures and called out
 
-A complete list of JDK 10 Features are available https://www.oracle.com/java/technologies/javase/10-relnote-issues.html[here].
+A complete list of JDK 15 Features are available https://www.oracle.com/java/technologies/javase/15-relnote-issues.html[here].
 
 
 == JVM, Design and Security
+* Added `CharSequence.isEmpty()` default method
+* https://openjdk.org/jeps/371 [JEP 371] - Hidden Classes
+* https://openjdk.org/jeps/378 [JEP 378] - Text Blocks is official
+* Removal of Comodo Root CA Certificate, DocuSign CA Root
+
 == Core Library
 == Concurrency
 == Collections (Data Structures)
 == Garbage Collectors
-== Incubators and Experimental Features
+* https://openjdk.org/jeps/378[JEP 377] ZGC A Scalable Low-Latency Garbage Collector (Production)
 
+== Incubators and Experimental Features
+* https://openjdk.org/jeps/360[JEP 360] - Sealed Classes (Preview)
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source, java]
+----
+include::lang/sealed/Mammals.java[]
+include::lang/sealed/Animals.java[]
+include::lang/sealed/Humans.java[]
+include::lang/sealed/SeaAnimals.java[]
+----
+
+* Records with Sealed Types
+
+[source, java]
+----
+
+sealed interface Genesis permits GV80, GV70 {  }
+
+record GV70(int price) implements Genesis { }
+
+record GV80(int price, String model) implements Genesis {  }
+----
+
+====
+
+* https://openjdk.org/jeps/359[JEP 359] - Records (Second Preview)
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source, java]
+----
+include::lang/records/person.java[]
+include::lang/records/RecordTest.java[]
+----
+
+[source,shell]
+----
+$ java RecordTest.java
+person[id=-2021242107, fName=John, lName=Smith, age=35, gender=DONT_CARE]
+----
+====
+
+* https://openjdk.org/jeps/375[JEP 375] - Pattern Matching for instanceOf
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source,java]
+----
+public record User(String name, int age) {};
+public record SomeRecord(Object o) {
+
+    public SomeRecord(Object o) {
+        if (o instanceof User u && u.age() > 18 ) {
+            System.out.println("User is an Adult");
+        }
+    }
+}
+----
+====

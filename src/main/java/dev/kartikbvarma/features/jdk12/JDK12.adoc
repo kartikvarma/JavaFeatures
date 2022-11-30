@@ -1,20 +1,80 @@
-= JDK 10 Features
-Kartik Boreda
-1.0, March 22, 2018:
-
+= JDK 12 Features
 :toc:
-:icons: font
-:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 
-IMPORTANT: The features listed in this project documentation doesn't include every change made to the project. (POV) Important changes and feature limited to core library, concurrency and data structures and called out
-
-A complete list of JDK 10 Features are available https://www.oracle.com/java/technologies/javase/10-relnote-issues.html[here].
+A complete list of JDK 12 Features are available https://www.oracle.com/java/technologies/javase/12-relnote-issues.html[here].
 
 
 == JVM, Design and Security
+
+* Support for Unicode 11
+* Support for Compact Number Formatting
+
+[source,jshell]
+----
+import java.text.NumberFormat;
+import java.util.Locale;
+
+var fmt = NumberFormat.getCompactNumberInstance(Locale.US, NumberFormat.Style.SHORT);
+
+fmt.format(1000);
+----
+
 == Core Library
-== Concurrency
+
+
+* New methods in `java.lang.String`
+
+[source, jshell]
+----
+var text = "Hello, world! \nJDK 12 is here";
+
+text.indent(2) // Indents by 2 spaces
+
+text.tranform(s -> new StringBuilder(v).reverse().toString())
+----
+
+* Compact Number Formatting - A Convenience way to represent abbreviated form of large numbers
+
 == Collections (Data Structures)
+
+* Collectors.teeing - A way to merge results of two collectors.
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source,java]
+----
+include::collection/TeeingExample.java[]
+----
+
+====
+
 == Garbage Collectors
+
+* ZGC Supports Concurrent Class Unloading. Enabled by default (`-XX:-ClassUnloading`)
+
+
 == Incubators and Experimental Features
+
+* https://openjdk.org/jeps/189[JEP 189] New GC Shenandoah - A Low-Pause-Time Garbage Collector. Use JVM argument `-XX:+UseShenandoahGC` to enable
+
+* https://openjdk.org/jeps/325[JEP 325] - Switch Expressions (Preview)
+
+NOTE: Enable preview changes by adding `-Xlint:preview --enable-preview` compiler args-Xlint:preview --enable-preview
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source, java]
+----
+include::lang/SwitchExprExample.java[]
+----
+
+[source,shell]
+----
+$ java SwitchExprExample.java
+[MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY]
+----
+
+====
 

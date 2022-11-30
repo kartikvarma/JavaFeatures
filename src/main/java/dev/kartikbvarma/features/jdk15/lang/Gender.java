@@ -1,4 +1,4 @@
-package dev.kartikbvarma.features.jdk17.lang;
+package dev.kartikbvarma.features.jdk15.lang;
 
 public enum Gender {
     MALE,

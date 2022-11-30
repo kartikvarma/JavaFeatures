@@ -1,20 +1,82 @@
-= JDK 10 Features
-Kartik Boreda
-1.0, March 22, 2018:
-
+= JDK 14 Features
 :toc:
-:icons: font
-:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 
-IMPORTANT: The features listed in this project documentation doesn't include every change made to the project. (POV) Important changes and feature limited to core library, concurrency and data structures and called out
-
-A complete list of JDK 10 Features are available https://www.oracle.com/java/technologies/javase/10-relnote-issues.html[here].
+A complete list of JDK 14 Features are available https://www.oracle.com/java/technologies/javase/14-relnote-issues.html[here].
 
 
 == JVM, Design and Security
+* https://openjdk.org/jeps/370[JEP 370] - Foreign Memory Access API - Built upon three main abstractions of `MemorySegment`, `MemoryAddress` and `MemoryLayout`
+* https://openjdk.org/jeps/343[JEP 343] - New Packaging Tool - `jlink`
+
 == Core Library
-== Concurrency
-== Collections (Data Structures)
+* Switch Expression is production ready
+
+* https://openjdk.org/jeps/358[JEP 358] - Helpfull NullPointerExceptions
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source, java]
+----
+include::lang/HelpfullNPE.java[]
+----
+
+[source, shell]
+----
+$java HelpfullNPE.java
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "name" is null
+	at dev.kartikbvarma.features.jdk14.lang.HelpfullNPE.main(HelpfullNPE.java:7)
+----
+====
+
 == Garbage Collectors
+* https://openjdk.org/jeps/345[JEP 345] - NUMA Aware Memory allocation for G1GC
+* https://openjdk.org/jeps/349[JEP 349] - JFR Event Streaming - For continuous monitory of JVM
+
 == Incubators and Experimental Features
+
+NOTE: Enable preview changes by adding `-Xlint:preview --enable-preview` compiler args-Xlint:preview --enable-preview
+
+* https://openjdk.org/jeps/305[JEP 305] - Pattern Matching for instanceOf
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source, java]
+----
+include::lang/PatternMatchingExample.java[]
+----
+
+[source,shell]
+----
+$ java PatternMatchingExample.java
+13
+----
+
+====
+
+* https://openjdk.org/jeps/368[JEP 368] - Text Blocks (Preview) - Two new escape sequence
+
+[source,jshell]
+----
+var sentence =
+"""
+New text blocks \
+In multiple lines with \
+""";
+
+var lines =
+"""
+line1 \s
+line2
+""";
+----
+
+* https://openjdk.org/jeps/359[JEP 359] - Records - A new keyword. A declaration that automatically adds constructor, getter, setter, toString and hashcode.
+
+[source, java]
+----
+public record User(int id, String password) {};
+----
+
 

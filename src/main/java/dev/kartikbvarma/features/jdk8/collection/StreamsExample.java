@@ -1,4 +1,4 @@
-package dev.kartikvboreda.features.jdk8.collection;
+package dev.kartikbvarma.features.jdk8.collection;
 
 import java.util.ArrayList;
 import java.util.HashSet;

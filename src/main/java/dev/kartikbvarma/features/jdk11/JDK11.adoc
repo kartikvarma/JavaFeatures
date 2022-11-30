@@ -1,20 +1,122 @@
-= JDK 10 Features
-Kartik Boreda
-1.0, March 22, 2018:
-
+= JDK 11 Features
 :toc:
-:icons: font
-:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
 
-IMPORTANT: The features listed in this project documentation doesn't include every change made to the project. (POV) Important changes and feature limited to core library, concurrency and data structures and called out
-
-A complete list of JDK 10 Features are available https://www.oracle.com/java/technologies/javase/10-relnote-issues.html[here].
+A complete list of JDK 11 Features are available https://www.oracle.com/java/technologies/javase/11-relnote-issues.html[here].
 
 
 == JVM, Design and Security
+
+* Unicode 10 support
+* https://openjdk.org/jeps/331[JEP 331] - Low Overhead Heap Profiling with JVMTI
+* Enhanced KeyStore Mechanisms - `jceks.key.serialFilter`
+* https://openjdk.org/jeps/332[JEP 332] - TLS 1.3 Support
+* https://openjdk.org/jeps/330[JEP 330] - Launch Single-File Source-Code Programs
+[source, shell]
+----
+java --classpath /home/foo/java Hello.java Namaste
+----
+[source,java]
+----
+#!/usr/bin/java --source 11
+public class Hello {
+    public static void main(String[] args){
+      System.out.println("Hello, "+args[0]);
+    }
+}
+----
+* Removal of `Thread.destroy()` and `Thread.stop(Throwable)`
+* `jmc` tool removal. Now available as a separate download.
+
 == Core Library
-== Concurrency
+
+* `java.lang.String` changes
+
+[source,java]
+----
+include::lang/NewStringMethods.java[]
+----
+
+* `java.util.function.Predicate.not()`
+
+[source,java]
+----
+import java.util.Collection;import java.util.Set;
+
+public class PredicateNot {
+    public static void main(String[] args){
+        var names = Set.of("John", "Jim", "Jacob", "");
+        names.stream()
+        .filter(not(String::isBlank))
+        .collect(Collection.toList());
+    }
+}
+----
+
+* https://openjdk.org/jeps/323[JEP 323] - Local-Variable Syntax for Lambda Parameters
+
+[source,java]
+----
+import java.util.Collection;
+import java.util.List;
+
+public class LVSLP {
+    public static void main(String[] args){
+        String names = List.of("John", "Joe", "Jacob");
+        names.stream()
+            .map((var s) -> s.toUpperCase())
+            .collect(Collection.toList());
+    }
+}
+----
+
+* https://openjdk.org/jeps/321[JEP 321] - Http Client in `java.net.http.*`
+
+[source, java]
+----
+include::lang/HttpClientExample.java[]
+----
+
+* New File methods - `writeString` and `readString`
+
+[source,java]
+----
+public class FilesChanges {
+    public static void main(String[] args){
+        Path filePath = Files.writeString(Files.createTempFile("/tmp", "Java 11 Rocks", ".txt"));
+        String fileContent = Files.readString(filePath);
+    }
+}
+----
+
+
 == Collections (Data Structures)
+* Default method - `Collection.toArray(IntFunction)`
+
 == Garbage Collectors
+
+https://openjdk.org/jeps/328[JEP 328] - Flight Recorder
+
+[source, shell]
+----
+# to enable add below to jvm argurments
+-XX:StartFlightRecording=filename=<file name>
+
+# to attach a FlightRecorder to running java process
+jcmd <pid> JFR.start filename=<file name>
+----
+
+
 == Incubators and Experimental Features
+* https://openjdk.org/jeps/333[JEP 333] - ZGC - A Scalable Low-Latency GC
+
+[source, bash]
+----
+$java --XX:+UnlockExperimentalVMOptions -XX:+UseZGC -jar hello.jar
+----
+* https://openjdk.org/jeps/318[JEP 318] - Epsilon - A No-op GC  - For Performance Testing
+
+== Deprecation and Removal
+
+* https://openjdk.org/jeps/320[JEP 320] - Removal of Java EE and CORBA modules, JAX-WS, `jdk.xmk.bind`
+* https://openjdk.org/jeps/335[JEP 335] - Deprecated Nashorn JavaScript Engine.
 

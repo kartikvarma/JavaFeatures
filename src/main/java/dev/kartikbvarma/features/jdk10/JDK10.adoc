@@ -1,0 +1,31 @@
+= JDK 10 Features
+:toc:
+
+A complete list of JDK 10 Features are available https://www.oracle.com/java/technologies/javase/10-relnote-issues.html[here].
+
+
+== JVM, Design and Security
+* Introduction of `var` keyword - Local variable Type inference
+* https://openjdk.org/jeps/319[JEP 319] - Root Certificates - A default set of root CA certificates in the JDK
+* Bytecode Generation improvement for Enhanced `for` loop
+* removal of deprecated class - `com.sun.security.auth.**`
+* removal of `javah` tool
+
+== Core Library
+* `Optional.orElseThrow()`
+
+
+== Collections (Data Structures)
+* New static methods to copy - `List.copyOf`, `Set.copyOf` and `Map.copyOf`
+* New methods to return unmutable list - `toUnmodifiableList`, `toUnmodifiableSet` and `toUnmodifiableMap`
+
+== Garbage Collectors
+* Added Parallel Full GC for G1
+
+== Incubators and Experimental Features
+
+* `java.http.httpclient` - Experimental `HTTPClient`, `HttpRequest`, `HttpResponse` and `WebSocket`
+
+* Java-Based JIT Compiler
+
+

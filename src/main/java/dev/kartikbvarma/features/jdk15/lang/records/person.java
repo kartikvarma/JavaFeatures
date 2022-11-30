@@ -1,6 +1,6 @@
 package dev.kartikbvarma.features.jdk15.lang.records;
 
-import dev.kartikbvarma.features.jdk17.lang.Gender;
+import dev.kartikbvarma.features.jdk15.lang.Gender;
 
 import java.util.random.RandomGenerator;
 
