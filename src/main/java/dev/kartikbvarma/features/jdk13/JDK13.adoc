@@ -6,13 +6,14 @@ A complete list of JDK 13 Features are available https://www.oracle.com/java/tec
 
 
 == Core Library
-* https://openjdk.org/jeps/353[JEP 353] Reimplement the legacy Socket API
+=== https://openjdk.org/jeps/353[JEP 353] Reimplement the legacy Socket API
 * `FileSystems.newFileSystem()` methods.
 
 == Garbage Collectors
 * Maximum Heap size increased from 4TB to 16TB
-* https://openjdk.org/jeps/351[JEP 351] ZGC Uncommit Unused Memory
-* https://openjdk.org/jeps/350[JEP 350] Dynamic CDS Archive
+
+=== https://openjdk.org/jeps/351[JEP 351] ZGC Uncommit Unused Memory
+=== https://openjdk.org/jeps/350[JEP 350] Dynamic CDS Archive
 [source, shell]
 ----
 $ java -XX:SharedArchiveFile=my_app_cds.jsa -cp my_app.jar
@@ -21,7 +22,7 @@ $ java -XX:SharedArchiveFile=my_app_cds.jsa -cp my_app.jar
 == Incubators and Experimental Features
 NOTE: Enable preview changes by adding `-Xlint:preview --enable-preview` compiler args-Xlint:preview --enable-preview
 
-* https://openjdk.org/jeps/354[JEP 354] - Switch Expression (...Continuation Preview)
+=== https://openjdk.org/jeps/354[JEP 354] - Switch Expression (...Continuation Preview)
 
 .Show Code (Click to view)
 [%collapsible]
@@ -33,7 +34,7 @@ include::lang/SwitchExpressionsYield.java[]
 
 ====
 
-* https://openjdk.org/jeps/355[JEP 355] - Text Blocks (Preview)
+=== https://openjdk.org/jeps/355[JEP 355] - Text Blocks (Preview)
 
 .Show Code (Click to view)
 [%collapsible]

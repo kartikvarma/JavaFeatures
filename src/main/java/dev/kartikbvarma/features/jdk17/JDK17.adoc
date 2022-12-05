@@ -3,13 +3,24 @@
 :toc:
 
 
-A complete list of JDK 10 Features are available https://www.oracle.com/java/technologies/javase/10-relnote-issues.html[here].
+A complete list of JDK 17 Features are available https://www.oracle.com/java/technologies/javase/17-relnote-issues.html[here].
 
 
 == JVM, Design and Security
-== Core Library
-== Concurrency
-== Collections (Data Structures)
-== Garbage Collectors
+=== https://openjdk.org/jeps/409[JEP 409] - Sealed Class - Production Ready
+=== https://openjdk.org/jeps/403[JEP 403] - Exclusively String Encapsulation
+    * To use deep reflection, you now have to explicitly allow it with --add-opens.
+
+=== https://openjdk.org/jeps/415[JEP 415] - Context Specific Deserialization Filter
+    * Deserialization of objects poses a significant security risk. Malicious attackers can construct objects via the data stream to be deserialized, via which they can ultimately execute arbitrary code in arbitrary classes available on the classpath.
+
+    * Java 9 introduced deserialization filters, i.e., the ability to specify which classes may (or may not) be deserialized.
+
+    * ObjectInputStream.setObjectInputFilter() for each deserialization separately.
+        System-wide via system property jdk.serialFilter or security property of the same name in the file conf/security/java.properties.
+    * These variants are not satisfactory for complex applications, especially those with third-party libraries that also contain deserialization code. For example, deserialization in third-party code cannot be configured via ObjectInputStream.setObjectInputFilter() (unless you change the third-party source code), but only globally.
+
+
 == Incubators and Experimental Features
+=== https://openjdk.java.net/jeps/406[JEP 406]  - Pattern matching of Switch Expression (Preview)
 

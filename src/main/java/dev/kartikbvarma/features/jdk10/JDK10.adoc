@@ -6,7 +6,8 @@ A complete list of JDK 10 Features are available https://www.oracle.com/java/tec
 
 == JVM, Design and Security
 * Introduction of `var` keyword - Local variable Type inference
-* https://openjdk.org/jeps/319[JEP 319] - Root Certificates - A default set of root CA certificates in the JDK
+
+=== https://openjdk.org/jeps/319[JEP 319] - Root Certificates - A default set of root CA certificates in the JDK
 * Bytecode Generation improvement for Enhanced `for` loop
 * removal of deprecated class - `com.sun.security.auth.**`
 * removal of `javah` tool

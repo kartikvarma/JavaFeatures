@@ -2,9 +2,12 @@
 :doctype: book
 Kartik Boreda
 1.0:
-:toc:
+:toc: left
 :includedir: _includes
 :sourcedir: ../../main/java/dev/kartikbvarma/features
+:stylesdir: ../resources/kb-asciidoc-styles
+:stylesheet: kb-asciidoc.css
+
 
 IMPORTANT: The features listed in this project documentation doesn't include every change made to the project. (POV) Important changes and feature limited to core library, concurrency and data structures and called out
 
@@ -24,8 +27,8 @@ include::{sourcedir}/jdk14/JDK14.adoc[]
 include::{sourcedir}/jdk15/JDK15.adoc[]
 include::{sourcedir}/jdk16/JDK16.adoc[]
 include::{sourcedir}/jdk17/JDK17.adoc[]
-include::{sourcedir}/jdk18/JDK18.adoc[]
-include::{sourcedir}/jdk19/JDK19.adoc[]
+// include::{sourcedir}/jdk18/JDK18.adoc[]
+// include::{sourcedir}/jdk19/JDK19.adoc[]
 
 
 

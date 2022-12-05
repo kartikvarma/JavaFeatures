@@ -5,50 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79a3025a-3ec5-4e82-a73d-b5d4a24641a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/docs/asciidoc/JavaGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/asciidoc/JavaGuide.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/asciidoc/JavaGuide.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/asciidoc/JavaGuide.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk10/JDK10.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk10/JDK10.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk11/JDK11.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk11/JDK11.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk11/lang/HttpClientExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk11/lang/HttpClientExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk11/lang/NewStringMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk11/lang/NewStringMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk12/JDK12.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk12/JDK12.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk12/collection/TeeingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk12/collection/TeeingExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk12/lang/SwitchExprExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk12/lang/SwitchExprExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk13/JDK13.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk13/JDK13.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk13/lang/SwitchExpressionsYield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk13/lang/SwitchExpressionsYield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk13/lang/TextBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk13/lang/TextBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk14/JDK14.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk14/JDK14.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk14/lang/HelpfullNPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk14/lang/HelpfullNPE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk14/lang/PatternMatchingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk14/lang/PatternMatchingExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/JDK15.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/JDK15.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/concurrency/records/RecordTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/concurrency/records/person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/records/RecordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/records/RecordTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/records/person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/records/person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/sealed/Animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/sealed/Animals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/sealed/Humans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/sealed/Humans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/sealed/Mammals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/sealed/Mammals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/sealed/SeaAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk15/lang/sealed/SeaAnimals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk16/JDK16.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk16/JDK16.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk17/JDK17.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk17/JDK17.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk18/JDK18.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk18/JDK18.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk19/JDK19.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk19/JDK19.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk8/collection/DummyInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk8/collection/DummyInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk8/collection/FunctionalInterfacesExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk8/collection/FunctionalInterfacesExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk8/collection/StreamsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk8/collection/StreamsExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk8/lang/DateAndTimeExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk8/lang/DateAndTimeExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk9/JDK9.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk9/JDK9.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk9/collection/CollectionFactoryExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk9/collection/CollectionFactoryExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk9/concurrency/FlowExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/kartikbvarma/features/jdk9/concurrency/FlowExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikvboreda/features/jdk8/collection/DummyInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikvboreda/features/jdk8/collection/FunctionalInterfacesExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/kartikvboreda/features/jdk8/collection/StreamsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/kb-asciidoc-styles/kb-asciidoc.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/kb-asciidoc-styles/kb-asciidoc.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,25 +102,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Empty&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kartikvarmaboreda/IdeaProjects/JavaMigration/src/main/resources/template&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "Empty",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "true",
+    "last_opened_file_path": "/Users/kartikvarmaboreda/IdeaProjects/JavaMigration/src/main/resources/template",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Settings.AsciiDoc.Preview",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dev.kartikbvarma.features.jdk17.lang.sealed" />
@@ -246,19 +213,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="JavaFeatures" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="JavaFeatures" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.JavaMigration [asciidoctor]" />
@@ -281,8 +235,20 @@
       <workItem from="1668221858457" duration="9128000" />
       <workItem from="1669346918276" duration="19921000" />
       <workItem from="1669518482728" duration="7409000" />
-      <workItem from="1669562211237" duration="35338000" />
+      <workItem from="1669562211237" duration="46292000" />
+      <workItem from="1670125640668" duration="25000" />
+      <workItem from="1670125685414" duration="1013000" />
+      <workItem from="1670127873037" duration="1311000" />
+      <workItem from="1670131769115" duration="5338000" />
     </task>
+    <task id="LOCAL-00001" summary="Update Features">
+      <created>1669782783971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669782783971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +264,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Update Features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -332,5 +304,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

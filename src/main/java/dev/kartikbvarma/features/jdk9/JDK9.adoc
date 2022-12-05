@@ -23,10 +23,10 @@ A complete list of JDK 9 Features are available https://docs.oracle.com/javase/9
 
 === https://openjdk.org/jeps/266[JEP 266] - More Concurrency Updates
 . Flow Api - Is a new class that has four interfaces to help with pub-sub model.
-.. Flow.Publisher<T>
-.. Flow.Subscriber<T>
-.. Flow.Subscription<T>
-.. Flow.Processor<T>
+.. `Flow.Publisher<T>`
+.. `Flow.Subscriber<T>`
+.. `Flow.Subscription<T>`
+.. `Flow.Processor<T>`
 
 .Sample Code (Click to view)
 [%collapsible]

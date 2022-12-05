@@ -1,14 +1,89 @@
 = JDK 16 Features
 :toc:
 
-
 A complete list of JDK 16 Features are available https://www.oracle.com/java/technologies/javase/16-relnote-issues.html[here].
 
 
 == JVM, Design and Security
+* New Package tool - `jpackage`
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source, java]
+----
+package kartikbvarma.jpackage;
+
+public class Main {
+    public static void main(String[] args){
+      System.out.println("Hello, JPackage!");
+    }
+}
+----
+[source, shell]
+----
+javac -d target/classes src/kartikbvarma/jpackage/Main.java
+jar cf lib/jpackagesample.jar -C target/classes .
+jpackage --name jpackagesample --input lib
+    --main-jar jpackagesample.jar --main-class kartikbvarma.jpackage.Main
+----
+====
+
+* https://openjdk.org/jeps/394[JEP 394] - Pattern Matching for instanceof - **Production Ready**
+
+.Show Code (Click to view)
+[%collapsible]
+====
+[source,java]
+----
+public record User(String name, int age) {};
+public record SomeRecord(Object o) {
+
+    public SomeRecord(Object o) {
+        if (o instanceof User u && u.age() > 18 ) { // generate a compiler error in 15 but is allowed starting 16
+            System.out.println("User is an Adult");
+        }
+    }
+}
+----
+====
+
+* https://openjdk.org/jeps/395[JEP 395] - Records - **Production Ready**
+
 == Core Library
-== Concurrency
+* https://openjdk.org/jeps/380[JEP 380] - Unix Domain Socket Channels
+
+[source,jshell]
+----
+import java.net.StandardProtocolFamily;
+import java.net.UnixDomainSocketAddress;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;import java.nio.file.Path;
+
+var socketPath = Path.of(System.getProperty("user.home")).resolve("kartikboreda.socket");
+var socketAddress = UnixDomainSocketAddress.of(socketPath);
+
+var socketServerChannel =  ServerSocketChannel.open(StandardProtocolFamily.UNIX);
+socketServerChannel.bind(socketAddress);
+
+var socketClientChannel = SocketChannel.open(StandardProtocolFamily.UNIX);
+socketClientChannel.connect()
+----
+
 == Collections (Data Structures)
+* `Stream.toList()`
+* `Stream.mapMulti()` - an alternative to `flatMap` that can take a custom merge implementation
+
+
 == Garbage Collectors
+* https://openjdk.java.net/jeps/376[JEP 376] ZGC - Concurrent Thread Stack Processing
+* Concurrently Uncommit Memory in G1
+* Elastic Metaspace - A switch is added to fine-tune metaspace reclamation: `-XX:MetaspaceReclaimPolicy=(balanced|aggressive|none).` balanced, the default, causes the VM to reclaim memory while keeping computational overhead minimal
+
 == Incubators and Experimental Features
+
+* https://openjdk.org/jeps/397[JEP 397] - Sealed Classes (Preview 2) - Three key changes
+** **Contextual Keywords** - In the Java Language Specification (JLS), the concept of "contextual keywords" replaces the previous "restricted identifiers" and "restricted keywords". "Contextual keywords ensure that new keywords such as _**sealed**_, _**permits**_ (or _**yield**_ from the switch expressions) may continue to be used outside the respective context, e.g., as variable or method names
+** The **_permits_** keyword can be omitted if subclasses derived from a sealed class are defined within the same class file ("compilation unit"). These are then considered "implicitly declared permitted subclasses".
+** For **instanceof** tests, the compiler checks whether the class hierarchy allows the check ever to return true. Since the second preview of Sealed Classes, the information from sealed class hierarchies is included in this check.
 

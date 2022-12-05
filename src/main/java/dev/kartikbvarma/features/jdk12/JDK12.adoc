@@ -56,9 +56,10 @@ include::collection/TeeingExample.java[]
 
 == Incubators and Experimental Features
 
-* https://openjdk.org/jeps/189[JEP 189] New GC Shenandoah - A Low-Pause-Time Garbage Collector. Use JVM argument `-XX:+UseShenandoahGC` to enable
+=== https://openjdk.org/jeps/189[JEP 189] New GC Shenandoah
+**  A Low-Pause-Time Garbage Collector. Use JVM argument `-XX:+UseShenandoahGC` to enable
 
-* https://openjdk.org/jeps/325[JEP 325] - Switch Expressions (Preview)
+=== https://openjdk.org/jeps/325[JEP 325] - Switch Expressions (Preview)
 
 NOTE: Enable preview changes by adding `-Xlint:preview --enable-preview` compiler args-Xlint:preview --enable-preview
 
